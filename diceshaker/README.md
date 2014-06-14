@@ -4,5 +4,5 @@ This sample is a dice roll app that use the accelerometer to detect shake and ge
 
 #### Screenshot
 <p align="center">
-  <img src="screenshot-diceshaker.png" />
+  <img src="screenshot-diceshaker.png" height="640" width="360" />
 </p>
