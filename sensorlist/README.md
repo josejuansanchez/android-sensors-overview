@@ -1,7 +1,7 @@
 sensorlist
 ==========
 This sample list all sensors available on the device along with their current values and their changes over time.  
-The source code used in this sample is based in [https://github.com/gast-lib/gast-lib](https://github.com/gast-lib/gast-lib).
+The source code used in this sample is based on [https://github.com/gast-lib/gast-lib](https://github.com/gast-lib/gast-lib).
 
 #### Screenshot
 <p align="center">
