@@ -141,7 +141,6 @@ Synthetic sensors do not necessarily have consistent implementation across diffe
   * [Position Sensors](http://developer.android.com/guide/topics/sensors/sensors_position.html)
   * [Environment Sensors](http://developer.android.com/guide/topics/sensors/sensors_environment.html)
 * [Android Sensor - Tutorial](http://www.vogella.com/tutorials/AndroidSensor/article.html). Lars Vogel.
-* [Sensors in Android](http://developer.samsung.com/android/technical-docs/Sensors-in-Android). Samsung Developers.
 * Video: [Sensor Fusion on Android Devices: A Revolution in Motion Processing](https://www.youtube.com/watch?v=C7JQ7Rpwn2k). Google Tech Talk 2010.
 
 ----
