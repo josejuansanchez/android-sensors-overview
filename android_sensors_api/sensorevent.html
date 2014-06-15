@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="3.4" data-basepath=".." data-revision="1402849724586">
+    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="3.4" data-basepath=".." data-revision="1402849873107">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -290,7 +290,7 @@
                 
                     <section class="normal" id="section-gitbook_6">
                     
-                        <h1 id="7-sensorevent">7. SensorEvent</h1>
+                        <h1 id="sensorevent">SensorEvent</h1>
 <p><a href="http://developer.android.com/reference/android/hardware/SensorEvent.html" target="_blank"><code>SensorEvent</code></a> is the data structure that contains the information that is passed to an app when a hardware sensor has information to report. The data members of the SensorEvent are:</p>
 <ul>
 <li><code>SensorEvent.accuracy</code>: The accuracy of the event. Can have the following values:<ul>
@@ -311,7 +311,9 @@
 <em>Image 1: <a href="http://developer.android.com/reference/android/hardware/SensorEvent.html" target="_blank">Android Developers</a></em></p>
 <p>The coordinate-system is defined relative to the screen of the phone in its default orientation. The axes are not swapped when the device&#39;s screen orientation changes.</p>
 <p>The X axis is horizontal and points to the right, the Y axis is vertical and points up and the Z axis points towards the outside of the front face of the screen. In this system, coordinates behind the screen have negative Z values.</p>
+<blockquote>
 <p><strong>Note</strong>: This coordinate system is different from the one used in the Android 2D APIs where the origin is in the top-left corner.</p>
+</blockquote>
 
                     
                     </section>

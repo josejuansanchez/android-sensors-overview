@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="3.1" data-basepath=".." data-revision="1402849724586">
+    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="3.1" data-basepath=".." data-revision="1402849873107">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -290,7 +290,7 @@
                 
                     <section class="normal" id="section-gitbook_8">
                     
-                        <h1 id="4-sensormanager">4. SensorManager</h1>
+                        <h1 id="sensormanager">SensorManager</h1>
 <p><a href="http://developer.android.com/reference/android/hardware/SensorManager.html" target="_blank"><code>SensorManager</code></a> lets you access the device&#39;s sensors. Get an instance of this class by calling <code>Context.getSystemService()</code> with the argument <code>SENSOR_SERVICE</code>.</p>
 <p>Always make sure to <strong>disable sensors you don&#39;t need, especially when your activity is paused</strong>. Failing to do so can drain the battery in just a few hours. Note that the system will not disable sensors automatically when the screen turns off.</p>
 <pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SensorActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Activity</span>, <span class="hljs-keyword">implements</span> <span class="hljs-title">SensorEventListener</span> {</span>
@@ -319,7 +319,9 @@
      }
  }
 </code></pre>
+<blockquote>
 <p><strong>Note</strong>: Don&#39;t use this mechanism with a Trigger Sensor, have a look at <code>TriggerEventListener. TYPE_SIGNIFICANT_MOTION</code> is an example of a trigger sensor.</p>
+</blockquote>
 
                     
                     </section>
