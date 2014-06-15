@@ -142,7 +142,7 @@ All values are in SI units (m/s2) and measure the acceleration applied to the ph
 Table 1 lists the acceleration values read from the sensor corresponding to each position of a device.
 
 <p align="center">
-  <img src="table1.png" alt="Acceleration Values on each Axis for Different Positions" />
+  <img src="images/table1.png" alt="Acceleration Values on each Axis for Different Positions" />
 </p>
 
 *Table 1: [Acceleration Values on each Axis for Different Positions](http://cache.freescale.com/files/sensors/doc/app_note/AN4317.pdf)*
