@@ -132,7 +132,22 @@ The sensors referenced through the [`Sensor`](http://developer.android.com/refer
 
 Synthetic sensors do not necessarily have consistent implementation across different devices. For example, some devices may use the gyroscope to determine rotation vector values while others do not. Differences in hardware or sensor synthesis implementations can cause synthetic sensors on some devices to provide better readings than synthetic sensors on other devices. Although these differences exist, it is still generally preferable to utilize synthetic sensor data over raw sensor data. Sensors tend to be designed to provide good results for a device’s specific sensor hardware.
 
-#### 10. References
+#### 10. `Sensor.TYPE_ACCELEROMETER`
+
+All values are in SI units (m/s2) and measure the acceleration applied to the phone minus the force of gravity.
+* values[0]: Acceleration minus Gx on the x-axis
+* values[1]: Acceleration minus Gy on the y-axis
+* values[2]: Acceleration minus Gz on the z-axis
+
+Table 1 lists the acceleration values read from the sensor corresponding to each position of a device.
+
+<p align="center">
+  <img src="" alt="Acceleration Values on each Axis for Different Positions" />
+</p>
+
+*Table 1: [Acceleration Values on each Axis for Different Positions](http://cache.freescale.com/files/sensors/doc/app_note/AN4317.pdf)*
+
+#### 11. References
 * Book: [Professional Android Sensor Programming](http://www.wrox.com/WileyCDA/WroxTitle/Professional-Android-Sensor-Programming.productCd-1118183487.html)
   * [Source code used in the book](https://github.com/gast-lib/gast-lib) 
   * [A runnable form of the code can also be downloaded from Google Play](https://play.google.com/store/apps/details?id=root.gast.playground)
