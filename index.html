@@ -1,0 +1,512 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>Introduction | Android Sensors Overview</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="josejuansanchez">
+        <meta name="description" content="A **sensor** is a device that detects and responds to some type of input from the physical environment. The specific input could be light, heat, motion, moisture, pressure, or any one of a great number of other environmental phenomena. The output is generally a signal that is converted to human-readable display at the sensor location or transmitted electronically over a network for reading or further processing. ">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="./what_is_a_sensor/README.html" />
+        
+        
+
+        <meta property="og:title" content="Introduction | Android Sensors Overview">
+        <meta property="og:site_name" content="Android Sensors Overview">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/josejuansanchez">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        
+
+        <link rel="stylesheet" href="gitbook/style.css">
+        
+
+
+        
+    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="0" data-basepath="." data-revision="1402848035337">
+    <div class="book-header">
+    <!-- Actions Left -->
+    
+    <a href="https://github.com/josejuansanchez/android-sensors-overview" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+	<div class="dropdown-caret">
+  <span class="caret-outer"></span>
+  <span class="caret-inner"></span>
+</div>
+
+	<div class="btn-group btn-block">
+		<button id="reduce-font-size" class="btn btn-default">A</button>
+		<button id="enlarge-font-size" class="btn btn-default">A</button>
+	</div>
+
+	<ul class="list-group font-family-list">
+		<li class="list-group-item" data-font="0">Serif</li>
+		<li class="list-group-item" data-font="1">Sans</li>
+	</ul>
+
+	<div class="btn-group btn-group-xs btn-block color-theme-list">
+	  <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+	</div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    
+    <a href="https://github.com/josejuansanchez/android-sensors-overview/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/josejuansanchez/android-sensors-overview/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1><a href="./" >Android Sensors Overview</a></h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        <li>
+            <a href="https://github.com/josejuansanchez" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/josejuansanchez/android-sensors-overview/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/josejuansanchez/android-sensors-overview/edit/master/README.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        
+        <li data-level="0" data-path="index.html">
+            <a href="./"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="what_is_a_sensor/README.html">
+                
+                <a href="./what_is_a_sensor/README.html">
+                    <i class="fa fa-check"></i> <b>1.</b> What is a sensor?
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="types_of_sensors/README.html">
+                
+                <a href="./types_of_sensors/README.html">
+                    <i class="fa fa-check"></i> <b>2.</b> Types of sensors
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="android_sensors_api/README.html">
+                
+                <a href="./android_sensors_api/README.html">
+                    <i class="fa fa-check"></i> <b>3.</b> Android Sensors API
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="3.1" data-path="android_sensors_api/sensormanager.html">
+                            
+                            <a href="./android_sensors_api/sensormanager.html">
+                                <i class="fa fa-check"></i> <b>3.1.</b> SensorManager
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="3.2" data-path="android_sensors_api/sensor.html">
+                            
+                            <a href="./android_sensors_api/sensor.html">
+                                <i class="fa fa-check"></i> <b>3.2.</b> Sensor
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="3.3" data-path="android_sensors_api/sensoreventlistener.html">
+                            
+                            <a href="./android_sensors_api/sensoreventlistener.html">
+                                <i class="fa fa-check"></i> <b>3.3.</b> SensorEventListener
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="3.4" data-path="android_sensors_api/sensorevent.html">
+                            
+                            <a href="./android_sensors_api/sensorevent.html">
+                                <i class="fa fa-check"></i> <b>3.4.</b> SensorEvent
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="4" data-path="sensor_rates/README.html">
+                
+                <a href="./sensor_rates/README.html">
+                    <i class="fa fa-check"></i> <b>4.</b> Sensor Rates
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="raw_and_synthetic/README.html">
+                
+                <a href="./raw_and_synthetic/README.html">
+                    <i class="fa fa-check"></i> <b>5.</b> Raw Sensors and Synthetic Sensors
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="accelerometer/README.html">
+                
+                <a href="./accelerometer/README.html">
+                    <i class="fa fa-check"></i> <b>6.</b> Sensor.TYPE_ACCELEROMETER
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="7" data-path="references/README.html">
+                
+                <a href="./references/README.html">
+                    <i class="fa fa-check"></i> <b>7.</b> References
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="8" data-path="examples/README.html">
+                
+                <a href="./examples/README.html">
+                    <i class="fa fa-check"></i> <b>8.</b> Examples
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="8.1" data-path="examples/diceshaker/README.html">
+                            
+                            <a href="./examples/diceshaker/README.html">
+                                <i class="fa fa-check"></i> <b>8.1.</b> Dice Shaker
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="8.2" data-path="examples/sensorlist/README.html">
+                            
+                            <a href="./examples/sensorlist/README.html">
+                                <i class="fa fa-check"></i> <b>8.2.</b> Sensor List
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 0%;min-width: 0%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="./what_is_a_sensor/README.html" title="What is a sensor?" class="chapter  new-chapter" data-progress="1" style="left: 7.142857142857143%;"></a>
+    
+        <a href="./types_of_sensors/README.html" title="Types of sensors" class="chapter  new-chapter" data-progress="2" style="left: 14.285714285714286%;"></a>
+    
+        <a href="./android_sensors_api/README.html" title="Android Sensors API" class="chapter  new-chapter" data-progress="3" style="left: 21.428571428571427%;"></a>
+    
+        <a href="./android_sensors_api/sensormanager.html" title="SensorManager" class="chapter  " data-progress="3.1" style="left: 28.571428571428573%;"></a>
+    
+        <a href="./android_sensors_api/sensor.html" title="Sensor" class="chapter  " data-progress="3.2" style="left: 35.714285714285715%;"></a>
+    
+        <a href="./android_sensors_api/sensoreventlistener.html" title="SensorEventListener" class="chapter  " data-progress="3.3" style="left: 42.857142857142854%;"></a>
+    
+        <a href="./android_sensors_api/sensorevent.html" title="SensorEvent" class="chapter  " data-progress="3.4" style="left: 50%;"></a>
+    
+        <a href="./sensor_rates/README.html" title="Sensor Rates" class="chapter  new-chapter" data-progress="4" style="left: 57.142857142857146%;"></a>
+    
+        <a href="./raw_and_synthetic/README.html" title="Raw Sensors and Synthetic Sensors" class="chapter  new-chapter" data-progress="5" style="left: 64.28571428571429%;"></a>
+    
+        <a href="./accelerometer/README.html" title="Sensor.TYPE_ACCELEROMETER" class="chapter  new-chapter" data-progress="6" style="left: 71.42857142857143%;"></a>
+    
+        <a href="./references/README.html" title="References" class="chapter  new-chapter" data-progress="7" style="left: 78.57142857142857%;"></a>
+    
+        <a href="./examples/README.html" title="Examples" class="chapter  new-chapter" data-progress="8" style="left: 85.71428571428571%;"></a>
+    
+        <a href="./examples/diceshaker/README.html" title="Dice Shaker" class="chapter  " data-progress="8.1" style="left: 92.85714285714286%;"></a>
+    
+        <a href="./examples/sensorlist/README.html" title="Sensor List" class="chapter  " data-progress="8.2" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_1">
+                    
+                        <h2 id="android-sensors-overview">Android Sensors Overview</h2>
+<h4 id="1-what-is-a-sensor-">1. What is a Sensor?</h4>
+<p>A <strong>sensor</strong> is a device that detects and responds to some type of input from the physical environment. The specific input could be light, heat, motion, moisture, pressure, or any one of a great number of other environmental phenomena. The output is generally a signal that is converted to human-readable display at the sensor location or transmitted electronically over a network for reading or further processing. </p>
+<p><em>Source:</em> <a href="http://whatis.techtarget.com/definition/sensor" target="_blank">whatis.techtarget.com</a></p>
+<h4 id="2-types-of-sensors">2. Types of Sensors</h4>
+<p>The Android platform supports three broad categories of sensors:</p>
+<ul>
+<li><strong>Motion sensors</strong>
+These sensors measure acceleration forces and rotational forces along three axes. This category includes accelerometers, gravity sensors, gyroscopes, and rotational vector sensors.</li>
+<li><strong>Environmental sensors</strong>
+These sensors measure various environmental parameters, such as ambient air temperature and pressure, illumination, and humidity. This category includes barometers, photometers, and thermometers.</li>
+<li><strong>Position sensors</strong>
+These sensors measure the physical position of a device. This category includes orientation sensors and magnetometers.</li>
+</ul>
+<p><strong>Note</strong>: <strong>Location Sensors</strong> will not be studied in this overview.<br><em>Source:</em> <a href="http://developer.android.com/guide/topics/sensors/sensors_overview.html" target="_blank">Sensors Overview - Android Developers</a></p>
+<h4 id="3-android-sensor-api">3. Android Sensor API</h4>
+<ul>
+<li><a href="http://developer.android.com/reference/android/hardware/SensorManager.html" target="_blank"><code>SensorManager</code></a>: is the Android system service that gives an app access to hardware sensors.</li>
+<li><a href="http://developer.android.com/reference/android/hardware/Sensor.html" target="_blank"><code>Sensor</code></a>: is the Android representation of a hardware sensor on a device.</li>
+<li><a href="http://developer.android.com/reference/android/hardware/SensorEventListener.html" target="_blank"><code>SensorEventListener</code></a>: is an interface that provides the callbacks to alert an app to sensor-related events.</li>
+<li><a href="http://developer.android.com/reference/android/hardware/SensorEvent.html" target="_blank"><code>SensorEvent</code></a>: is the data structure that contains the information that is passed to an app when a hardware sensor has information to report.</li>
+</ul>
+<h4 id="4-sensormanager">4. SensorManager</h4>
+<p><a href="http://developer.android.com/reference/android/hardware/SensorManager.html" target="_blank"><code>SensorManager</code></a> lets you access the device&#39;s sensors. Get an instance of this class by calling <code>Context.getSystemService()</code> with the argument <code>SENSOR_SERVICE</code>.</p>
+<p>Always make sure to <strong>disable sensors you don&#39;t need, especially when your activity is paused</strong>. Failing to do so can drain the battery in just a few hours. Note that the system will not disable sensors automatically when the screen turns off.</p>
+<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SensorActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Activity</span>, <span class="hljs-keyword">implements</span> <span class="hljs-title">SensorEventListener</span> {</span>
+     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> SensorManager mSensorManager;
+     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Sensor mAccelerometer;
+
+     <span class="hljs-keyword">public</span> <span class="hljs-title">SensorActivity</span>() {
+         mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
+         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+     }
+
+     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onResume</span>() {
+         <span class="hljs-keyword">super</span>.onResume();
+         mSensorManager.registerListener(<span class="hljs-keyword">this</span>, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+     }
+
+     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPause</span>() {
+         <span class="hljs-keyword">super</span>.onPause();
+         mSensorManager.unregisterListener(<span class="hljs-keyword">this</span>);
+     }
+
+     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAccuracyChanged</span>(Sensor sensor, <span class="hljs-keyword">int</span> accuracy) {
+     }
+
+     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onSensorChanged</span>(SensorEvent event) {
+     }
+ }
+</code></pre>
+<p><strong>Note</strong>: Don&#39;t use this mechanism with a Trigger Sensor, have a look at <code>TriggerEventListener. TYPE_SIGNIFICANT_MOTION</code> is an example of a trigger sensor.</p>
+<h4 id="5-sensor">5. Sensor</h4>
+<p><a href="http://developer.android.com/reference/android/hardware/Sensor.html" target="_blank"><code>Sensor</code></a> represents a hardware sensor on a device.</p>
+<ul>
+<li>Interesting public methods:<ul>
+<li><code>getMaximumRange()</code> returns the maximum range the sensor can measure in the regular units reported by the sensor. </li>
+<li><code>getResolution()</code> reports the resolution of the sensor, in the regular units reported by the sensor.</li>
+</ul>
+</li>
+</ul>
+<h4 id="6-sensoreventlistener">6. SensorEventListener</h4>
+<p><a href="http://developer.android.com/reference/android/hardware/SensorEventListener.html" target="_blank"><code>SensorEventListener</code></a> is used for receiving notifications from the SensorManager when sensor values have changed. In this class there are two public methods:</p>
+<ul>
+<li><code>onAccuracyChanged(Sensor sensor, int accuracy)</code>: Called when the accuracy of a sensor has changed.</li>
+<li><code>abstract void     onSensorChanged(SensorEvent event)</code>: Called when sensor values have changed.</li>
+</ul>
+<h4 id="7-sensorevent">7. SensorEvent</h4>
+<p><a href="http://developer.android.com/reference/android/hardware/SensorEvent.html" target="_blank"><code>SensorEvent</code></a> is the data structure that contains the information that is passed to an app when a hardware sensor has information to report. The data members of the SensorEvent are:</p>
+<ul>
+<li><code>SensorEvent.accuracy</code>: The accuracy of the event. Can have the following values:<ul>
+<li><code>SensorManager.SENSOR_STATUS_ACCURACY_HIGH</code></li>
+<li><code>SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM</code></li>
+<li><code>SensorManager.SENSOR_STATUS_ACCURACY_LOW</code></li>
+<li><code>SensorManager.SENSOR_STATUS_UNRELIABLE</code></li>
+</ul>
+</li>
+<li><code>SensorEvent.sensor</code>: An instance of the <code>Sensor</code> class that generated the <code>SensorEvent</code>.</li>
+<li><code>SensorEvent.timestamp</code>: The time in milliseconds when the <code>SensorEvent</code> occurred.</li>
+<li><code>SensorEvent.values</code>: An array of values that represent sensor data.</li>
+</ul>
+<h5 id="definition-of-the-coordinate-system-used-by-the-sensorevent-api-">Definition of the coordinate system used by the SensorEvent API.</h5>
+<p align="center">
+  <img src="http://developer.android.com/images/axis_device.png" alt="Coordinate system used by the SensorEvent API" />
+</p>
+<em>Image 1: <a href="http://developer.android.com/reference/android/hardware/SensorEvent.html" target="_blank">Android Developers</a></em>
+
+The coordinate-system is defined relative to the screen of the phone in its default orientation. The axes are not swapped when the device&#39;s screen orientation changes.
+
+The X axis is horizontal and points to the right, the Y axis is vertical and points up and the Z axis points towards the outside of the front face of the screen. In this system, coordinates behind the screen have negative Z values.
+
+<strong>Note</strong>: This coordinate system is different from the one used in the Android 2D APIs where the origin is in the top-left corner.
+
+#### 8. Sensor Rates
+When you register a listener, you specify the delay or measurement rate for the listener. The predefined rates are:
+<em> <code>SENSOR_DELAY_FASTEST</code>
+</em> <code>SENSOR_DELAY_GAME</code>
+<em> <code>SENSOR_DELAY_UI</code> (Suitable for usual user interface functions, like rotating the screen orientation.)
+</em> <code>SENSOR_DELAY_NORMAL</code> (The default value.)
+
+In Android 4.0.3, these are hard-coded to be 0, 20, 67, and 200 milliseconds, respectively. You can also specify your own delay in microseconds. 
+
+#### 9. Raw Sensors and Synthetic Sensors
+The sensors referenced through the <a href="http://developer.android.com/reference/android/hardware/Sensor.html" target="_blank"><code>Sensor</code></a> class may be of two types: 
+<em> <strong>Raw sensors</strong> give raw data from a sensor, and one raw sensor corresponds to one actual physical component inside the Android device. 
+  </em> <code>Sensor.TYPE_LIGHT</code>
+  <em> <code>Sensor.TYPE_PROXIMITY</code>
+  </em> <code>Sensor.TYPE_PRESSURE</code>
+  <em> <code>Sensor.TYPE_TEMPERATURE</code> (deprecated) 
+  </em> <code>Sensor.TYPE_ACCELEROMETER</code>
+  <em> <code>Sensor.TYPE_GYROSCOPE</code>
+  </em> <code>Sensor.TYPE_MAGNETIC_FIELD</code>
+  <em> <code>Sensor.TYPE_RELATIVE_HUMIDITY</code>
+  </em> <code>Sensor.TYPE_AMBIENT_TEMPERATURE</code>
+
+<em> <strong>Synthetic (or composite or virtual) sensors</strong> provide an abstraction layer between application code and low-level device components by either combining the raw data of multiple raw sensors, or by modifying the raw sensor data to make it easier to consume.
+  </em> <code>Sensor.TYPE_ROTATION_VECTOR</code>
+  <em> <code>Sensor.TYPE_LINEAR_ACCELERATION</code>
+  </em> <code>Sensor.TYPE_GRAVITY</code>
+  <em> <code>Sensor.TYPE_ORIENTATION</code> (deprecated)
+
+Synthetic sensors do not necessarily have consistent implementation across different devices. For example, some devices may use the gyroscope to determine rotation vector values while others do not. Differences in hardware or sensor synthesis implementations can cause synthetic sensors on some devices to provide better readings than synthetic sensors on other devices. Although these differences exist, it is still generally preferable to utilize synthetic sensor data over raw sensor data. Sensors tend to be designed to provide good results for a device’s specific sensor hardware.
+
+#### 10. <code>Sensor.TYPE_ACCELEROMETER</code>
+
+All values are in SI units (m/s^2) and measure the <strong>acceleration of the device minus the force of gravity</strong>.
+
+Acceleration sensors return sensor events for all 3 axes at a constant rate defined by <code>setDelay()</code>.
+
+</em> x: Acceleration on the x-axis
+<em> y: Acceleration on the y-axis
+</em> z: Acceleration on the z-axis
+
+<strong>Note that the readings from the accelerometer include the acceleration
+due to gravity (which is opposite to the direction of the gravity vector).</strong>
+
+<strong>Examples:</strong>
+<em> The norm of <code>&lt;x, y, z&gt;</code>  should be close to 0 when in free fall.
+</em> When the device lies flat on a table and is pushed on its left side
+toward the right, the x acceleration value is positive.
+<em> When the device lies flat on a table, the acceleration value is +9.81,
+which correspond to the acceleration of the device (0 m/s^2) minus the
+force of gravity (-9.81 m/s^2).
+</em> When the device lies flat on a table and is pushed toward the sky, the
+acceleration value is greater than +9.81, which correspond to the
+acceleration of the device (+A m/s^2) minus the force of
+gravity (-9.81 m/s^2).
+
+Table 1 lists the acceleration values read from the sensor corresponding to each position of a device.
+
+<p align="center">
+  <img src="images/table1.png" alt="Acceleration Values on each Axis for Different Positions" />
+</p>
+
+<p><em>Table 1: <a href="http://cache.freescale.com/files/sensors/doc/app_note/AN4317.pdf" target="_blank">Acceleration Values on each Axis for Different Positions</a></em></p>
+<h4 id="11-references">11. References</h4>
+<ul>
+<li><a href="https://android.googlesource.com/platform/hardware/libhardware/+/master/include/hardware/sensors.h" target="_blank">sensors.h</a>. Android Source Code.</li>
+<li>Book: <a href="http://www.wrox.com/WileyCDA/WroxTitle/Professional-Android-Sensor-Programming.productCd-1118183487.html" target="_blank">Professional Android Sensor Programming</a><ul>
+<li><a href="https://github.com/gast-lib/gast-lib" target="_blank">Source code used in the book</a> </li>
+<li><a href="https://play.google.com/store/apps/details?id=root.gast.playground" target="_blank">A runnable form of the code can also be downloaded from Google Play</a></li>
+</ul>
+</li>
+<li><a href="http://developer.android.com/guide/topics/sensors/sensors_overview.html" target="_blank">Android Sensors Overview</a>. API Guides - Android Developers.<ul>
+<li><a href="http://developer.android.com/guide/topics/sensors/sensors_motion.html" target="_blank">Motion Sensors</a></li>
+<li><a href="http://developer.android.com/guide/topics/sensors/sensors_position.html" target="_blank">Position Sensors</a></li>
+<li><a href="http://developer.android.com/guide/topics/sensors/sensors_environment.html" target="_blank">Environment Sensors</a></li>
+</ul>
+</li>
+<li><a href="http://www.vogella.com/tutorials/AndroidSensor/article.html" target="_blank">Android Sensor - Tutorial</a>. Lars Vogel.</li>
+<li>Video: <a href="https://www.youtube.com/watch?v=C7JQ7Rpwn2k" target="_blank">Sensor Fusion on Android Devices: A Revolution in Motion Processing</a>. Google Tech Talk 2010.</li>
+</ul>
+<hr>
+<h3 id="examples">Examples</h3>
+<h4 id="1-dice-shaker">1. Dice Shaker</h4>
+<p><a href="https://github.com/josejuansanchez/android-sensors-overview/tree/master/diceshaker" target="_blank">Source code</a>.</p>
+<h4 id="2-sensor-list">2. Sensor List</h4>
+<p><a href="https://github.com/josejuansanchez/android-sensors-overview/tree/master/sensorlist" target="_blank">Source code</a>.</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <a href="./what_is_a_sensor/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="gitbook/app.js"></script>
+        
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
+    
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+    </body>
+</html>
