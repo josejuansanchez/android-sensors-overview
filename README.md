@@ -134,7 +134,7 @@ Synthetic sensors do not necessarily have consistent implementation across diffe
 
 #### 10. `Sensor.TYPE_ACCELEROMETER`
 
-All values are in SI units (m/s^2) and measure the acceleration of the device **minus the force of gravity**.
+All values are in SI units (m/s^2) and measure the **acceleration of the device minus the force of gravity**.
 
 Acceleration sensors return sensor events for all 3 axes at a constant rate defined by `setDelay()`.
 
@@ -142,8 +142,8 @@ Acceleration sensors return sensor events for all 3 axes at a constant rate defi
 * y: Acceleration on the y-axis
 * z: Acceleration on the z-axis
 
-Note that the readings from the accelerometer include the acceleration
-due to gravity (which is opposite to the direction of the gravity vector).
+**Note that the readings from the accelerometer include the acceleration
+due to gravity (which is opposite to the direction of the gravity vector).**
 
 **Examples:**
 * The norm of <x, y, z>  should be close to 0 when in free fall.
