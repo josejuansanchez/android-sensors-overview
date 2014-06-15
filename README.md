@@ -178,6 +178,7 @@ Table 1 lists the acceleration values read from the sensor corresponding to each
   * [Environment Sensors](http://developer.android.com/guide/topics/sensors/sensors_environment.html)
 * [Android Sensor - Tutorial](http://www.vogella.com/tutorials/AndroidSensor/article.html). Lars Vogel.
 * Video: [Sensor Fusion on Android Devices: A Revolution in Motion Processing](https://www.youtube.com/watch?v=C7JQ7Rpwn2k). Google Tech Talk 2010.
+* [sensors.h](https://android.googlesource.com/platform/hardware/libhardware/+/master/include/hardware/sensors.h). Android Source Code.
 
 ----
 ### Examples
