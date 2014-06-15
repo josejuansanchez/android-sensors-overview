@@ -146,7 +146,7 @@ Acceleration sensors return sensor events for all 3 axes at a constant rate defi
 due to gravity (which is opposite to the direction of the gravity vector).**
 
 **Examples:**
-* The norm of <x, y, z>  should be close to 0 when in free fall.
+* The norm of `<x, y, z>`  should be close to 0 when in free fall.
 
 * When the device lies flat on a table and is pushed on its left side
 toward the right, the x acceleration value is positive.
