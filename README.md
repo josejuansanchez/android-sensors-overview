@@ -130,7 +130,7 @@ The sensors referenced through the [`Sensor`](http://developer.android.com/refer
   * `Sensor.TYPE_GRAVITY`
   * `Sensor.TYPE_ORIENTATION` (deprecated)
 
-Synthetic sensors do not necessarily have consistent implementation across different devices. For example, some devices may use the gyroscope to determine rotation vector values while others do not. Differences in hardware or sensor synthesis implementations can cause synthetic sensors on some devices to provide better readings than synthetic sensors on other devices. Although these differences exist, it is still generally preferable to utilize synthetic sensor data over raw sensor data. Sensors tend to be designed to provide good results for a device’s specific sensor hardware.
+Synthetic sensors do not necessarily have consistent implementation across different devices. For example, some devices may use the gyroscope to determine rotation vector values while others do not. Differences in hardware or sensor synthesis implementations can cause synthetic sensors on some devices to provide better readings than synthetic sensors on other devices. Although these differences exist, it is still generally preferable to utilize synthetic sensor data over raw sensor data. Sensors tend to be designed to provide good results for a device's specific sensor hardware.
 
 #### 10. `Sensor.TYPE_ACCELEROMETER`
 
