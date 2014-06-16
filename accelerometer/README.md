@@ -25,6 +25,6 @@ gravity (-9.81 m/s^2).
 
 Table 1 lists the acceleration values read from the sensor corresponding to each position of a device.
 
-[![Acceleration Values on each Axis for Different Positions](../images/table1.png)](../images/table1.png)
+[![Acceleration Values on each Axis for Different Positions](../assets/table1.png)](../assets/table1.png)
 
 *Table 1: [Acceleration Values on each Axis for Different Positions](http://cache.freescale.com/files/sensors/doc/app_note/AN4317.pdf)*
