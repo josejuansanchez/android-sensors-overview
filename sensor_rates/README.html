@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="4" data-basepath=".." data-revision="1402960228867">
+    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="4" data-basepath=".." data-revision="1402961973602">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -323,14 +323,14 @@
                     <section class="normal" id="section-gitbook_12">
                     
                         <h1 id="sensor-rates">Sensor Rates</h1>
-<p>When you register a listener, you specify the delay or measurement rate for the listener. The predefined rates are:</p>
+<p>When you register a listener, you specify the delay or measurement rate for the listener. The predefined rates are defined as constants in the <code>SensorManager</code> class:</p>
 <ul>
-<li><code>SENSOR_DELAY_FASTEST</code></li>
-<li><code>SENSOR_DELAY_GAME</code></li>
-<li><code>SENSOR_DELAY_UI</code> (Suitable for usual user interface functions, like rotating the screen orientation.)</li>
-<li><code>SENSOR_DELAY_NORMAL</code> (The default value.)</li>
+<li><code>SENSOR_DELAY_FASTEST</code>: get sensor data as fast as possible.</li>
+<li><code>SENSOR_DELAY_GAME</code>: rate suitable for games.</li>
+<li><code>SENSOR_DELAY_UI</code>: rate suitable for the user interface functions.</li>
+<li><code>SENSOR_DELAY_NORMAL</code>: rate suitable for screen orientation changes. (The default value).</li>
 </ul>
-<p>In Android 4.0.3, these are hard-coded to be 0, 20, 67, and 200 milliseconds, respectively. You can also specify your own delay in microseconds. </p>
+<p>The value of these constants in Android 4.4.2 are 0, 20000, 66667 and 200000 <em>microseconds</em>.</p>
 
                     
                     </section>
