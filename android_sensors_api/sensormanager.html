@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="3.1" data-basepath=".." data-revision="1402959324939">
+    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="3.1" data-basepath=".." data-revision="1402959521139">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -324,32 +324,34 @@
                     
                         <h1 id="sensormanager">SensorManager</h1>
 <p><a href="http://developer.android.com/reference/android/hardware/SensorManager.html" target="_blank"><code>SensorManager</code></a> lets you access the device&#39;s sensors. Get an instance of this class by calling <code>Context.getSystemService()</code> with the argument <code>SENSOR_SERVICE</code>.</p>
+<pre><code class="lang-java">mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
+</code></pre>
 <p>Always make sure to <strong>disable sensors you don&#39;t need, especially when your activity is paused</strong>. Failing to do so can drain the battery in just a few hours. Note that the system will not disable sensors automatically when the screen turns off.</p>
-<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SensorActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Activity</span>, <span class="hljs-keyword">implements</span> <span class="hljs-title">SensorEventListener</span> {</span>
-     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> SensorManager mSensorManager;
-     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Sensor mAccelerometer;
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SensorActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Activity</span>, <span class="hljs-keyword">implements</span> <span class="hljs-title">SensorEventListener</span> {</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> SensorManager mSensorManager;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Sensor mAccelerometer;
 
-     <span class="hljs-keyword">public</span> <span class="hljs-title">SensorActivity</span>() {
-         mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
-         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-     }
+  <span class="hljs-keyword">public</span> <span class="hljs-title">SensorActivity</span>() {
+    mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
+    mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+  }
 
-     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onResume</span>() {
-         <span class="hljs-keyword">super</span>.onResume();
-         mSensorManager.registerListener(<span class="hljs-keyword">this</span>, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
-     }
+  <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onResume</span>() {
+    <span class="hljs-keyword">super</span>.onResume();
+    mSensorManager.registerListener(<span class="hljs-keyword">this</span>, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+  }
 
-     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPause</span>() {
-         <span class="hljs-keyword">super</span>.onPause();
-         mSensorManager.unregisterListener(<span class="hljs-keyword">this</span>);
-     }
+  <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPause</span>() {
+    <span class="hljs-keyword">super</span>.onPause();
+    mSensorManager.unregisterListener(<span class="hljs-keyword">this</span>);
+  }
 
-     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAccuracyChanged</span>(Sensor sensor, <span class="hljs-keyword">int</span> accuracy) {
-     }
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onAccuracyChanged</span>(Sensor sensor, <span class="hljs-keyword">int</span> accuracy) {
+  }
 
-     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onSensorChanged</span>(SensorEvent event) {
-     }
- }
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onSensorChanged</span>(SensorEvent event) {
+  }
+}
 </code></pre>
 <blockquote>
 <p><strong>Note</strong>: Don&#39;t use this mechanism with a Trigger Sensor, have a look at <code>TriggerEventListener. TYPE_SIGNIFICANT_MOTION</code> is an example of a trigger sensor.</p>
