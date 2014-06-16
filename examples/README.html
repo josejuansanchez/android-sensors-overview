@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>SensorEventListener | Android Sensors Overview</title>
+        <title>Examples | Android Sensors Overview</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../android_sensors_api/sensorevent.html" />
+        <link rel="next" href="../examples/diceshaker/README.html" />
         
         
-        <link rel="prev" href="../android_sensors_api/sensor.html" />
+        <link rel="prev" href="../references/README.html" />
         
 
-        <meta property="og:title" content="SensorEventListener | Android Sensors Overview">
+        <meta property="og:title" content="Examples | Android Sensors Overview">
         <meta property="og:site_name" content="Android Sensors Overview">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="3.3" data-basepath=".." data-revision="1402921270718">
+    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="8" data-basepath=".." data-revision="1402921270718">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -105,7 +105,7 @@
             <a href="https://github.com/josejuansanchez/android-sensors-overview/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/josejuansanchez/android-sensors-overview/edit/master/android_sensors_api/sensoreventlistener.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/josejuansanchez/android-sensors-overview/edit/master/examples/README.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         
@@ -249,7 +249,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 42.857142857142854%;min-width: 35.714285714285715%;"></div>
+        <div class="inner" style="width: 85.71428571428571%;min-width: 78.57142857142857%;"></div>
     </div>
     <div class="chapters">
     
@@ -267,17 +267,17 @@
     
         <a href="../android_sensors_api/sensoreventlistener.html" title="SensorEventListener" class="chapter done " data-progress="3.3" style="left: 42.857142857142854%;"></a>
     
-        <a href="../android_sensors_api/sensorevent.html" title="SensorEvent" class="chapter  " data-progress="3.4" style="left: 50%;"></a>
+        <a href="../android_sensors_api/sensorevent.html" title="SensorEvent" class="chapter done " data-progress="3.4" style="left: 50%;"></a>
     
-        <a href="../sensor_rates/README.html" title="Sensor Rates" class="chapter  new-chapter" data-progress="4" style="left: 57.142857142857146%;"></a>
+        <a href="../sensor_rates/README.html" title="Sensor Rates" class="chapter done new-chapter" data-progress="4" style="left: 57.142857142857146%;"></a>
     
-        <a href="../raw_and_synthetic/README.html" title="Raw Sensors and Synthetic Sensors" class="chapter  new-chapter" data-progress="5" style="left: 64.28571428571429%;"></a>
+        <a href="../raw_and_synthetic/README.html" title="Raw Sensors and Synthetic Sensors" class="chapter done new-chapter" data-progress="5" style="left: 64.28571428571429%;"></a>
     
-        <a href="../accelerometer/README.html" title="Sensor.TYPE_ACCELEROMETER" class="chapter  new-chapter" data-progress="6" style="left: 71.42857142857143%;"></a>
+        <a href="../accelerometer/README.html" title="Sensor.TYPE_ACCELEROMETER" class="chapter done new-chapter" data-progress="6" style="left: 71.42857142857143%;"></a>
     
-        <a href="../references/README.html" title="References" class="chapter  new-chapter" data-progress="7" style="left: 78.57142857142857%;"></a>
+        <a href="../references/README.html" title="References" class="chapter done new-chapter" data-progress="7" style="left: 78.57142857142857%;"></a>
     
-        <a href="../examples/README.html" title="Examples" class="chapter  new-chapter" data-progress="8" style="left: 85.71428571428571%;"></a>
+        <a href="../examples/README.html" title="Examples" class="chapter done new-chapter" data-progress="8" style="left: 85.71428571428571%;"></a>
     
         <a href="../examples/diceshaker/README.html" title="Dice Shaker" class="chapter  " data-progress="8.1" style="left: 92.85714285714286%;"></a>
     
@@ -288,14 +288,13 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_2">
+                    <section class="normal" id="section-gitbook_8">
                     
-                        <h1 id="sensoreventlistener">SensorEventListener</h1>
-<p><a href="http://developer.android.com/reference/android/hardware/SensorEventListener.html" target="_blank"><code>SensorEventListener</code></a> is used for receiving notifications from the SensorManager when sensor values have changed. In this class there are two public methods:</p>
-<ul>
-<li><code>onAccuracyChanged(Sensor sensor, int accuracy)</code>: Called when the accuracy of a sensor has changed.</li>
-<li><code>abstract void     onSensorChanged(SensorEvent event)</code>: Called when sensor values have changed.</li>
-</ul>
+                        <h1 id="examples">Examples</h1>
+<h2 id="1-dice-shaker">1. Dice Shaker</h2>
+<p><a href="https://github.com/josejuansanchez/android-sensors-overview/tree/master/diceshaker" target="_blank">Source code</a>.</p>
+<h2 id="2-sensor-list">2. Sensor List</h2>
+<p><a href="https://github.com/josejuansanchez/android-sensors-overview/tree/master/sensorlist" target="_blank">Source code</a>.</p>
 
                     
                     </section>
@@ -305,10 +304,10 @@
         </div>
 
         
-        <a href="../android_sensors_api/sensor.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../references/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../android_sensors_api/sensorevent.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../examples/diceshaker/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
