@@ -11,6 +11,6 @@
 * [Raw Sensors and Synthetic Sensors](raw_and_synthetic/README.md)
 * [Sensor.TYPE_ACCELEROMETER](accelerometer/README.md)
 * [References](references/README.md)
-* [Examples](examples/README.md)
+* Examples
   * [Dice Shaker](examples/diceshaker/README.md)
   * [Sensor List](examples/sensorlist/README.md)
