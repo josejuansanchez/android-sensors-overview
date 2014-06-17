@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="3.2" data-basepath=".." data-revision="1403042022637">
+    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="3.2" data-basepath=".." data-revision="1403044263159">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -284,14 +284,24 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_3">
+                    <section class="normal" id="section-gitbook_2">
                     
                         <h1 id="sensor">Sensor</h1>
-<p><a href="http://developer.android.com/reference/android/hardware/Sensor.html" target="_blank"><code>Sensor</code></a> represents a hardware sensor on a device.</p>
+<p><a href="http://developer.android.com/reference/android/hardware/Sensor.html" target="_blank">Sensor</a> represents a hardware sensor on a device. This class provides information about the sensor, such as:</p>
 <ul>
-<li>Interesting public methods:<ul>
-<li><code>getMaximumRange()</code> returns the maximum range the sensor can measure in the regular units reported by the sensor. </li>
-<li><code>getResolution()</code> reports the resolution of the sensor, in the regular units reported by the sensor.</li>
+<li>Maximum range</li>
+<li>Minimum delay</li>
+<li>Name</li>
+<li>Power</li>
+<li>Resolution</li>
+<li>Type</li>
+<li>Vendor</li>
+<li><p>Version</p>
+</li>
+<li><p>Some public methods:</p>
+<ul>
+<li><code>getMaximumRange()</code>: returns the maximum range the sensor can measure in the regular units reported by the sensor. </li>
+<li><code>getResolution()</code>: reports the resolution of the sensor (smallest difference between two values reported by this sensor), in the regular units reported by the sensor.</li>
 </ul>
 </li>
 </ul>
