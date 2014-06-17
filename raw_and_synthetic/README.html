@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="5" data-basepath=".." data-revision="1403044263159">
+    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="5" data-basepath=".." data-revision="1403044659720">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -287,10 +287,9 @@
                     <section class="normal" id="section-gitbook_10">
                     
                         <h1 id="raw-sensors-and-synthetic-sensors">Raw Sensors and Synthetic Sensors</h1>
-<p>The sensors referenced through the <a href="http://developer.android.com/reference/android/hardware/Sensor.html" target="_blank"><code>Sensor</code></a> class may be of two types: </p>
+<p>The sensors referenced through the <a href="http://developer.android.com/reference/android/hardware/Sensor.html" target="_blank">Sensor</a> class may be of two types: </p>
 <ul>
-<li><p><strong>Raw sensors</strong> give raw data from a sensor, and one raw sensor corresponds to one actual physical component inside the Android device. </p>
-<ul>
+<li><strong>Raw sensors</strong> give raw data from a sensor, and one raw sensor corresponds to one actual physical component inside the Android device. <ul>
 <li><code>Sensor.TYPE_LIGHT</code></li>
 <li><code>Sensor.TYPE_PROXIMITY</code></li>
 <li><code>Sensor.TYPE_PRESSURE</code></li>
@@ -302,8 +301,9 @@
 <li><code>Sensor.TYPE_AMBIENT_TEMPERATURE</code></li>
 </ul>
 </li>
-<li><p><strong>Synthetic (or composite or virtual) sensors</strong> provide an abstraction layer between application code and low-level device components by either combining the raw data of multiple raw sensors, or by modifying the raw sensor data to make it easier to consume.</p>
+</ul>
 <ul>
+<li><strong>Synthetic (or composite or virtual) sensors</strong> provide an abstraction layer between application code and low-level device components by either combining the raw data of multiple raw sensors, or by modifying the raw sensor data to make it easier to consume.<ul>
 <li><code>Sensor.TYPE_ROTATION_VECTOR</code></li>
 <li><code>Sensor.TYPE_LINEAR_ACCELERATION</code></li>
 <li><code>Sensor.TYPE_GRAVITY</code></li>
@@ -311,7 +311,6 @@
 </ul>
 </li>
 </ul>
-<p>Synthetic sensors do not necessarily have consistent implementation across different devices. For example, some devices may use the gyroscope to determine rotation vector values while others do not. Differences in hardware or sensor synthesis implementations can cause synthetic sensors on some devices to provide better readings than synthetic sensors on other devices. Although these differences exist, it is still generally preferable to utilize synthetic sensor data over raw sensor data. Sensors tend to be designed to provide good results for a device&#39;s specific sensor hardware.</p>
 
                     
                     </section>
