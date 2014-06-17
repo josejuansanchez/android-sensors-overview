@@ -1,5 +1,5 @@
 # SensorEvent
-[`SensorEvent`](http://developer.android.com/reference/android/hardware/SensorEvent.html) is the data structure that contains the information that is passed to an app when a hardware sensor has information to report. The data members of the SensorEvent are:
+[SensorEvent](http://developer.android.com/reference/android/hardware/SensorEvent.html) is the data structure that contains the information that is passed to an app when a hardware sensor has information to report. The data members of the SensorEvent are:
   * `SensorEvent.accuracy`: The accuracy of the event. Can have the following values:
     * `SensorManager.SENSOR_STATUS_ACCURACY_HIGH`
     * `SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM`

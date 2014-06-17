@@ -10,7 +10,3 @@
 * Type
 * Vendor
 * Version
-
-* Some public methods:
-  * `getMaximumRange()`: returns the maximum range the sensor can measure in the regular units reported by the sensor. 
-  * `getResolution()`: reports the resolution of the sensor (smallest difference between two values reported by this sensor), in the regular units reported by the sensor.

@@ -2,7 +2,7 @@
 
 Resources and Samples about Android Sensors.
 
-This material was used as the basis for the Android Workshop, June 19th 2014, organized by the [Community of Android Developers of Almería](https://plus.google.com/u/0/communities/105420979515011141876).
+This book was used as the basis for the Android Workshop, June 19th 2014, organized by the [Community of Android Developers of Almería](https://plus.google.com/u/0/communities/105420979515011141876).
 
 [![Mobile Device Sensors](./assets/mobile_device_sensors.png)](./assets/mobile_device_sensors.png)
 
