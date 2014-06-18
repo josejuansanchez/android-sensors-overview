@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Sensor | Android Sensors Overview</title>
+        <title>Gravity and Linear Acceleration | Android Sensors Overview</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.2">
@@ -19,10 +19,10 @@
     <meta name="author" content="josejuansanchez">
     
     
-    <link rel="next" href="../android_sensors_api/sensoreventlistener.html" />
+    <link rel="next" href="../best_practices/README.html" />
     
     
-    <link rel="prev" href="../android_sensors_api/sensormanager.html" />
+    <link rel="prev" href="../accelerometer/README.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="3.2" data-basepath=".." data-revision="1403051724253">
+    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="8" data-basepath=".." data-revision="1403051724253">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -118,7 +118,7 @@
         
         
         <li>
-            <a href="https://github.com/josejuansanchez/android-sensors-overview/edit/master/android_sensors_api/sensor.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/josejuansanchez/android-sensors-overview/edit/master/gravity_and_linear_acceleration/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -310,7 +310,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 31.25%;min-width: 25%;"></div>
+        <div class="inner" style="width: 75%;min-width: 68.75%;"></div>
     </div>
     <div class="chapters">
     
@@ -326,19 +326,19 @@
     
         <a href="../android_sensors_api/sensor.html" title="Sensor" class="chapter done " data-progress="3.2" style="left: 31.25%;"></a>
     
-        <a href="../android_sensors_api/sensoreventlistener.html" title="SensorEventListener" class="chapter  " data-progress="3.3" style="left: 37.5%;"></a>
+        <a href="../android_sensors_api/sensoreventlistener.html" title="SensorEventListener" class="chapter done " data-progress="3.3" style="left: 37.5%;"></a>
     
-        <a href="../android_sensors_api/sensorevent.html" title="SensorEvent" class="chapter  " data-progress="3.4" style="left: 43.75%;"></a>
+        <a href="../android_sensors_api/sensorevent.html" title="SensorEvent" class="chapter done " data-progress="3.4" style="left: 43.75%;"></a>
     
-        <a href="../sensor_rates/README.html" title="Sensor Rates" class="chapter  new-chapter" data-progress="4" style="left: 50%;"></a>
+        <a href="../sensor_rates/README.html" title="Sensor Rates" class="chapter done new-chapter" data-progress="4" style="left: 50%;"></a>
     
-        <a href="../raw_and_synthetic/README.html" title="Raw Sensors and Composite Sensors" class="chapter  new-chapter" data-progress="5" style="left: 56.25%;"></a>
+        <a href="../raw_and_synthetic/README.html" title="Raw Sensors and Composite Sensors" class="chapter done new-chapter" data-progress="5" style="left: 56.25%;"></a>
     
-        <a href="../coordinate_system/README.html" title="Sensor Coordinate System" class="chapter  new-chapter" data-progress="6" style="left: 62.5%;"></a>
+        <a href="../coordinate_system/README.html" title="Sensor Coordinate System" class="chapter done new-chapter" data-progress="6" style="left: 62.5%;"></a>
     
-        <a href="../accelerometer/README.html" title="Accelerometer" class="chapter  new-chapter" data-progress="7" style="left: 68.75%;"></a>
+        <a href="../accelerometer/README.html" title="Accelerometer" class="chapter done new-chapter" data-progress="7" style="left: 68.75%;"></a>
     
-        <a href="../gravity_and_linear_acceleration/README.html" title="Gravity and Linear Acceleration" class="chapter  new-chapter" data-progress="8" style="left: 75%;"></a>
+        <a href="../gravity_and_linear_acceleration/README.html" title="Gravity and Linear Acceleration" class="chapter done new-chapter" data-progress="8" style="left: 75%;"></a>
     
         <a href="../best_practices/README.html" title="Best Practices" class="chapter  new-chapter" data-progress="9" style="left: 81.25%;"></a>
     
@@ -353,21 +353,62 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_5">
+                    <section class="normal" id="section-gitbook_12">
                     
-                        <h1 id="sensor">Sensor</h1>
-<p><a href="http://developer.android.com/reference/android/hardware/Sensor.html" target="_blank">Sensor</a> represents a hardware sensor on a device. This class provides information about the sensor, such as:</p>
-<ul>
-<li>Maximum range</li>
-<li>Minimum delay</li>
-<li>Name</li>
-<li>Power</li>
-<li>Resolution</li>
-<li>Type</li>
-<li>Vendor</li>
-<li>Version</li>
-</ul>
-<p><strong>Source code:</strong> <a href="https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/Sensor.java" target="_blank">Sensor.java</a></p>
+                        <h1 id="gravity-and-linear-acceleration">Gravity and Linear Acceleration</h1>
+<p><code>Sensor.TYPE_GRAVITY</code></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Common Uses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Software or Hardware</td>
+<td>Measures the force of gravity in m/s2 that is applied to a device on all three physical axes (x, y, z).</td>
+<td>Motion detection (shake, tilt, etc.).</td>
+</tr>
+</tbody>
+</table>
+<p><code>Sensor.TYPE_LINEAR_ACCELERATION</code></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Common Uses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Software or Hardware</td>
+<td>Measures the acceleration force in m/s2 that is applied to a device on all three physical axes (x, y, and z), excluding the force of gravity.</td>
+<td>Monitoring acceleration along a single axis.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong> How to filter acceleration sensor data to get the force of gravity and the linear acceleration.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onSensorChanged</span>(SensorEvent event){
+  <span class="hljs-comment">// In this example, alpha is calculated as t / (t + dT),</span>
+  <span class="hljs-comment">// where t is the low-pass filter's time-constant and</span>
+  <span class="hljs-comment">// dT is the event delivery rate.</span>
+
+  <span class="hljs-keyword">final</span> <span class="hljs-keyword">float</span> alpha = <span class="hljs-number">0.8</span>;
+
+  <span class="hljs-comment">// Isolate the force of gravity with the low-pass filter.</span>
+  gravity[<span class="hljs-number">0</span>] = alpha * gravity[<span class="hljs-number">0</span>] + (<span class="hljs-number">1</span> - alpha) * event.values[<span class="hljs-number">0</span>];
+  gravity[<span class="hljs-number">1</span>] = alpha * gravity[<span class="hljs-number">1</span>] + (<span class="hljs-number">1</span> - alpha) * event.values[<span class="hljs-number">1</span>];
+  gravity[<span class="hljs-number">2</span>] = alpha * gravity[<span class="hljs-number">2</span>] + (<span class="hljs-number">1</span> - alpha) * event.values[<span class="hljs-number">2</span>];
+
+  <span class="hljs-comment">// Remove the gravity contribution with the high-pass filter.</span>
+  linear_acceleration[<span class="hljs-number">0</span>] = event.values[<span class="hljs-number">0</span>] - gravity[<span class="hljs-number">0</span>];
+  linear_acceleration[<span class="hljs-number">1</span>] = event.values[<span class="hljs-number">1</span>] - gravity[<span class="hljs-number">1</span>];
+  linear_acceleration[<span class="hljs-number">2</span>] = event.values[<span class="hljs-number">2</span>] - gravity[<span class="hljs-number">2</span>];
+}
+</code></pre>
 
                     
                     </section>
@@ -377,10 +418,10 @@
         </div>
 
         
-        <a href="../android_sensors_api/sensormanager.html" class="navigation navigation-prev " aria-label="Previous page: SensorManager"><i class="fa fa-angle-left"></i></a>
+        <a href="../accelerometer/README.html" class="navigation navigation-prev " aria-label="Previous page: Accelerometer"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../android_sensors_api/sensoreventlistener.html" class="navigation navigation-next " aria-label="Next page: SensorEventListener"><i class="fa fa-angle-right"></i></a>
+        <a href="../best_practices/README.html" class="navigation navigation-next " aria-label="Next page: Best Practices"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

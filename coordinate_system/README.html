@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Sensor | Android Sensors Overview</title>
+        <title>Sensor Coordinate System | Android Sensors Overview</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.2">
@@ -19,10 +19,10 @@
     <meta name="author" content="josejuansanchez">
     
     
-    <link rel="next" href="../android_sensors_api/sensoreventlistener.html" />
+    <link rel="next" href="../accelerometer/README.html" />
     
     
-    <link rel="prev" href="../android_sensors_api/sensormanager.html" />
+    <link rel="prev" href="../raw_and_synthetic/README.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="3.2" data-basepath=".." data-revision="1403051724253">
+    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="6" data-basepath=".." data-revision="1403051724253">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -118,7 +118,7 @@
         
         
         <li>
-            <a href="https://github.com/josejuansanchez/android-sensors-overview/edit/master/android_sensors_api/sensor.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/josejuansanchez/android-sensors-overview/edit/master/coordinate_system/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -310,7 +310,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 31.25%;min-width: 25%;"></div>
+        <div class="inner" style="width: 62.5%;min-width: 56.25%;"></div>
     </div>
     <div class="chapters">
     
@@ -326,15 +326,15 @@
     
         <a href="../android_sensors_api/sensor.html" title="Sensor" class="chapter done " data-progress="3.2" style="left: 31.25%;"></a>
     
-        <a href="../android_sensors_api/sensoreventlistener.html" title="SensorEventListener" class="chapter  " data-progress="3.3" style="left: 37.5%;"></a>
+        <a href="../android_sensors_api/sensoreventlistener.html" title="SensorEventListener" class="chapter done " data-progress="3.3" style="left: 37.5%;"></a>
     
-        <a href="../android_sensors_api/sensorevent.html" title="SensorEvent" class="chapter  " data-progress="3.4" style="left: 43.75%;"></a>
+        <a href="../android_sensors_api/sensorevent.html" title="SensorEvent" class="chapter done " data-progress="3.4" style="left: 43.75%;"></a>
     
-        <a href="../sensor_rates/README.html" title="Sensor Rates" class="chapter  new-chapter" data-progress="4" style="left: 50%;"></a>
+        <a href="../sensor_rates/README.html" title="Sensor Rates" class="chapter done new-chapter" data-progress="4" style="left: 50%;"></a>
     
-        <a href="../raw_and_synthetic/README.html" title="Raw Sensors and Composite Sensors" class="chapter  new-chapter" data-progress="5" style="left: 56.25%;"></a>
+        <a href="../raw_and_synthetic/README.html" title="Raw Sensors and Composite Sensors" class="chapter done new-chapter" data-progress="5" style="left: 56.25%;"></a>
     
-        <a href="../coordinate_system/README.html" title="Sensor Coordinate System" class="chapter  new-chapter" data-progress="6" style="left: 62.5%;"></a>
+        <a href="../coordinate_system/README.html" title="Sensor Coordinate System" class="chapter done new-chapter" data-progress="6" style="left: 62.5%;"></a>
     
         <a href="../accelerometer/README.html" title="Accelerometer" class="chapter  new-chapter" data-progress="7" style="left: 68.75%;"></a>
     
@@ -353,21 +353,19 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_5">
+                    <section class="normal" id="section-gitbook_9">
                     
-                        <h1 id="sensor">Sensor</h1>
-<p><a href="http://developer.android.com/reference/android/hardware/Sensor.html" target="_blank">Sensor</a> represents a hardware sensor on a device. This class provides information about the sensor, such as:</p>
-<ul>
-<li>Maximum range</li>
-<li>Minimum delay</li>
-<li>Name</li>
-<li>Power</li>
-<li>Resolution</li>
-<li>Type</li>
-<li>Vendor</li>
-<li>Version</li>
-</ul>
-<p><strong>Source code:</strong> <a href="https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/Sensor.java" target="_blank">Sensor.java</a></p>
+                        <h1 id="sensor-coordinate-system">Sensor Coordinate System</h1>
+<p>In general, the sensor framework uses a standard 3-axis coordinate system to express data values. </p>
+<p><p align="center">
+  <img src="http://developer.android.com/images/axis_device.png" alt="Coordinate system used by the SensorEvent API" />
+</p>
+<em>Image 1: <a href="http://developer.android.com/reference/android/hardware/SensorEvent.html" target="_blank">Android Developers</a></em></p>
+<p>The coordinate-system is defined relative to the screen of the phone in its default orientation. <strong>The axes are not swapped when the device&#39;s screen orientation changes</strong>.</p>
+<p>The X axis is horizontal and points to the right, the Y axis is vertical and points up and the Z axis points towards the outside of the front face of the screen. In this system, coordinates behind the screen have negative Z values.</p>
+<blockquote>
+<p><strong>Note</strong>: This coordinate system is different from the one used in the Android 2D APIs where the origin is in the top-left corner.</p>
+</blockquote>
 
                     
                     </section>
@@ -377,10 +375,10 @@
         </div>
 
         
-        <a href="../android_sensors_api/sensormanager.html" class="navigation navigation-prev " aria-label="Previous page: SensorManager"><i class="fa fa-angle-left"></i></a>
+        <a href="../raw_and_synthetic/README.html" class="navigation navigation-prev " aria-label="Previous page: Raw Sensors and Composite Sensors"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../android_sensors_api/sensoreventlistener.html" class="navigation navigation-next " aria-label="Next page: SensorEventListener"><i class="fa fa-angle-right"></i></a>
+        <a href="../accelerometer/README.html" class="navigation navigation-next " aria-label="Next page: Accelerometer"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

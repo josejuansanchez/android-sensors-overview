@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Sensor.TYPE_ACCELEROMETER | Android Sensors Overview</title>
+        <title>Accelerometer | Android Sensors Overview</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.2">
@@ -19,10 +19,10 @@
     <meta name="author" content="josejuansanchez">
     
     
-    <link rel="next" href="../references/README.html" />
+    <link rel="next" href="../gravity_and_linear_acceleration/README.html" />
     
     
-    <link rel="prev" href="../raw_and_synthetic/README.html" />
+    <link rel="prev" href="../coordinate_system/README.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="6" data-basepath=".." data-revision="1403045293121">
+    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="7" data-basepath=".." data-revision="1403051724253">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -212,51 +212,78 @@
         <li class="chapter " data-level="5" data-path="raw_and_synthetic/README.html">
             
             <a href="../raw_and_synthetic/README.html">
-                <i class="fa fa-check"></i> <b>5.</b> Raw Sensors and Synthetic Sensors
+                <i class="fa fa-check"></i> <b>5.</b> Raw Sensors and Composite Sensors
             </a>
             
             
         </li>
     
-        <li class="chapter " data-level="6" data-path="accelerometer/README.html">
+        <li class="chapter " data-level="6" data-path="coordinate_system/README.html">
+            
+            <a href="../coordinate_system/README.html">
+                <i class="fa fa-check"></i> <b>6.</b> Sensor Coordinate System
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="accelerometer/README.html">
             
             <a href="../accelerometer/README.html">
-                <i class="fa fa-check"></i> <b>6.</b> Sensor.TYPE_ACCELEROMETER
+                <i class="fa fa-check"></i> <b>7.</b> Accelerometer
             </a>
             
             
         </li>
     
-        <li class="chapter " data-level="7" data-path="references/README.html">
+        <li class="chapter " data-level="8" data-path="gravity_and_linear_acceleration/README.html">
+            
+            <a href="../gravity_and_linear_acceleration/README.html">
+                <i class="fa fa-check"></i> <b>8.</b> Gravity and Linear Acceleration
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="best_practices/README.html">
+            
+            <a href="../best_practices/README.html">
+                <i class="fa fa-check"></i> <b>9.</b> Best Practices
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="references/README.html">
             
             <a href="../references/README.html">
-                <i class="fa fa-check"></i> <b>7.</b> References
+                <i class="fa fa-check"></i> <b>10.</b> References
             </a>
             
             
         </li>
     
-        <li class="chapter " data-level="8" >
+        <li class="chapter " data-level="11" >
             
-            <span><b>8.</b> Examples</span>
+            <span><b>11.</b> Examples</span>
             
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="8.1" data-path="examples/diceshaker/README.html">
+        <li class="chapter " data-level="11.1" data-path="examples/diceshaker/README.html">
             
             <a href="../examples/diceshaker/README.html">
-                <i class="fa fa-check"></i> <b>8.1.</b> Dice Shaker
+                <i class="fa fa-check"></i> <b>11.1.</b> Dice Shaker
             </a>
             
             
         </li>
     
-        <li class="chapter " data-level="8.2" data-path="examples/sensorlist/README.html">
+        <li class="chapter " data-level="11.2" data-path="examples/sensorlist/README.html">
             
             <a href="../examples/sensorlist/README.html">
-                <i class="fa fa-check"></i> <b>8.2.</b> Sensor List
+                <i class="fa fa-check"></i> <b>11.2.</b> Sensor List
             </a>
             
             
@@ -283,60 +310,76 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 76.92307692307692%;min-width: 69.23076923076923%;"></div>
+        <div class="inner" style="width: 68.75%;min-width: 62.5%;"></div>
     </div>
     <div class="chapters">
     
         <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
     
-        <a href="../what_is_a_sensor/README.html" title="What is a sensor?" class="chapter done new-chapter" data-progress="1" style="left: 7.6923076923076925%;"></a>
+        <a href="../what_is_a_sensor/README.html" title="What is a sensor?" class="chapter done new-chapter" data-progress="1" style="left: 6.25%;"></a>
     
-        <a href="../types_of_sensors/README.html" title="Types of sensors" class="chapter done new-chapter" data-progress="2" style="left: 15.384615384615385%;"></a>
+        <a href="../types_of_sensors/README.html" title="Types of sensors" class="chapter done new-chapter" data-progress="2" style="left: 12.5%;"></a>
     
-        <a href="../android_sensors_api/README.html" title="Android Sensors API" class="chapter done new-chapter" data-progress="3" style="left: 23.076923076923077%;"></a>
+        <a href="../android_sensors_api/README.html" title="Android Sensors API" class="chapter done new-chapter" data-progress="3" style="left: 18.75%;"></a>
     
-        <a href="../android_sensors_api/sensormanager.html" title="SensorManager" class="chapter done " data-progress="3.1" style="left: 30.76923076923077%;"></a>
+        <a href="../android_sensors_api/sensormanager.html" title="SensorManager" class="chapter done " data-progress="3.1" style="left: 25%;"></a>
     
-        <a href="../android_sensors_api/sensor.html" title="Sensor" class="chapter done " data-progress="3.2" style="left: 38.46153846153846%;"></a>
+        <a href="../android_sensors_api/sensor.html" title="Sensor" class="chapter done " data-progress="3.2" style="left: 31.25%;"></a>
     
-        <a href="../android_sensors_api/sensoreventlistener.html" title="SensorEventListener" class="chapter done " data-progress="3.3" style="left: 46.15384615384615%;"></a>
+        <a href="../android_sensors_api/sensoreventlistener.html" title="SensorEventListener" class="chapter done " data-progress="3.3" style="left: 37.5%;"></a>
     
-        <a href="../android_sensors_api/sensorevent.html" title="SensorEvent" class="chapter done " data-progress="3.4" style="left: 53.84615384615385%;"></a>
+        <a href="../android_sensors_api/sensorevent.html" title="SensorEvent" class="chapter done " data-progress="3.4" style="left: 43.75%;"></a>
     
-        <a href="../sensor_rates/README.html" title="Sensor Rates" class="chapter done new-chapter" data-progress="4" style="left: 61.53846153846154%;"></a>
+        <a href="../sensor_rates/README.html" title="Sensor Rates" class="chapter done new-chapter" data-progress="4" style="left: 50%;"></a>
     
-        <a href="../raw_and_synthetic/README.html" title="Raw Sensors and Synthetic Sensors" class="chapter done new-chapter" data-progress="5" style="left: 69.23076923076923%;"></a>
+        <a href="../raw_and_synthetic/README.html" title="Raw Sensors and Composite Sensors" class="chapter done new-chapter" data-progress="5" style="left: 56.25%;"></a>
     
-        <a href="../accelerometer/README.html" title="Sensor.TYPE_ACCELEROMETER" class="chapter done new-chapter" data-progress="6" style="left: 76.92307692307692%;"></a>
+        <a href="../coordinate_system/README.html" title="Sensor Coordinate System" class="chapter done new-chapter" data-progress="6" style="left: 62.5%;"></a>
     
-        <a href="../references/README.html" title="References" class="chapter  new-chapter" data-progress="7" style="left: 84.61538461538461%;"></a>
+        <a href="../accelerometer/README.html" title="Accelerometer" class="chapter done new-chapter" data-progress="7" style="left: 68.75%;"></a>
     
-        <a href="../examples/diceshaker/README.html" title="Dice Shaker" class="chapter  " data-progress="8.1" style="left: 92.3076923076923%;"></a>
+        <a href="../gravity_and_linear_acceleration/README.html" title="Gravity and Linear Acceleration" class="chapter  new-chapter" data-progress="8" style="left: 75%;"></a>
     
-        <a href="../examples/sensorlist/README.html" title="Sensor List" class="chapter  " data-progress="8.2" style="left: 100%;"></a>
+        <a href="../best_practices/README.html" title="Best Practices" class="chapter  new-chapter" data-progress="9" style="left: 81.25%;"></a>
+    
+        <a href="../references/README.html" title="References" class="chapter  " data-progress="10" style="left: 87.5%;"></a>
+    
+        <a href="../examples/diceshaker/README.html" title="Dice Shaker" class="chapter  " data-progress="11.1" style="left: 93.75%;"></a>
+    
+        <a href="../examples/sensorlist/README.html" title="Sensor List" class="chapter  " data-progress="11.2" style="left: 100%;"></a>
     
     </div>
 </div>
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_7">
+                    <section class="normal" id="section-gitbook_3">
                     
-                        <h1 id="sensor-type_accelerometer">Sensor.TYPE_ACCELEROMETER</h1>
-<p>All values are in SI units (m/s^2) and measure the <strong>acceleration of the device minus the force of gravity</strong>.</p>
-<p>Acceleration sensors return sensor events for all 3 axes at a constant rate defined by <code>setDelay()</code>.</p>
-<ul>
-<li>x: Acceleration on the x-axis</li>
-<li>y: Acceleration on the y-axis</li>
-<li>z: Acceleration on the z-axis</li>
-</ul>
+                        <h1 id="accelerometer">Accelerometer</h1>
+<p><code>Sensor.TYPE_ACCELEROMETER</code></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Common Uses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hardware</td>
+<td>Measures the acceleration force in m/s^2 that is applied to a device on all three physical axes (x, y, and z), <strong>including the force of gravity</strong>.</td>
+<td>Motion detection (shake, tilt, etc.).</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
 <p><strong>Note that the readings from the accelerometer include the acceleration
 due to gravity (which is opposite to the direction of the gravity vector).</strong></p>
 </blockquote>
 <p><strong>Examples:</strong></p>
 <ul>
-<li>The norm of <code>&lt;x, y, z&gt;</code>  should be close to 0 when in free fall.</li>
+<li>The norm of <code>&lt;x, y, z&gt;</code>  should be close to <em>0</em> when in free fall.</li>
 <li>When the device lies flat on a table and is pushed on its left side
 toward the right, the x acceleration value is positive.</li>
 <li>When the device lies flat on a table, the acceleration value is +9.81,
@@ -347,9 +390,8 @@ acceleration value is greater than +9.81, which correspond to the
 acceleration of the device (+A m/s^2) minus the force of
 gravity (-9.81 m/s^2).</li>
 </ul>
-<p>Table 1 lists the acceleration values read from the sensor corresponding to each position of a device.</p>
 <p><a href="../assets/table1.png"><img src="../assets/table1.png" alt="Acceleration Values on each Axis for Different Positions"></a></p>
-<p><em>Table 1: <a href="http://cache.freescale.com/files/sensors/doc/app_note/AN4317.pdf" target="_blank">Acceleration Values on each Axis for Different Positions</a></em></p>
+<p><em>Table 1: <a href="http://cache.freescale.com/files/sensors/doc/app_note/AN4317.pdf" target="_blank">Acceleration Values on each Axis for Different Positions</a></em>.</p>
 
                     
                     </section>
@@ -359,10 +401,10 @@ gravity (-9.81 m/s^2).</li>
         </div>
 
         
-        <a href="../raw_and_synthetic/README.html" class="navigation navigation-prev " aria-label="Previous page: Raw Sensors and Synthetic Sensors"><i class="fa fa-angle-left"></i></a>
+        <a href="../coordinate_system/README.html" class="navigation navigation-prev " aria-label="Previous page: Sensor Coordinate System"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../references/README.html" class="navigation navigation-next " aria-label="Next page: References"><i class="fa fa-angle-right"></i></a>
+        <a href="../gravity_and_linear_acceleration/README.html" class="navigation navigation-next " aria-label="Next page: Gravity and Linear Acceleration"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
