@@ -11,4 +11,4 @@ These sensors measure the physical position of a device. This category includes 
 
 >**Note**: **Location Sensors** will not be studied in this overview.  
 
-*Source:* [Sensors Overview - Android Developers](http://developer.android.com/guide/topics/sensors/sensors_overview.html)
+**Source:** [Sensors Overview - Android Developers](http://developer.android.com/guide/topics/sensors/sensors_overview.html)

@@ -8,8 +8,11 @@
   * [SensorEventListener](android_sensors_api/sensoreventlistener.md)
   * [SensorEvent](android_sensors_api/sensorevent.md)
 * [Sensor Rates](sensor_rates/README.md)
-* [Raw Sensors and Synthetic Sensors](raw_and_synthetic/README.md)
-* [Sensor.TYPE_ACCELEROMETER](accelerometer/README.md)
+* [Raw Sensors and Composite Sensors](raw_and_synthetic/README.md)
+* [Sensor Coordinate System](coordinate_system/README.md)
+* [Accelerometer](accelerometer/README.md)
+* [Gravity and Linear Acceleration](gravity_and_linear_acceleration/README.md)
+* [Best Practices](best_practices/README.md)
 * [References](references/README.md)
 * Examples
   * [Dice Shaker](examples/diceshaker/README.md)

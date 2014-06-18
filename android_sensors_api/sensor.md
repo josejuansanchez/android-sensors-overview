@@ -10,3 +10,5 @@
 * Type
 * Vendor
 * Version
+
+**Source code:** [Sensor.java](https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/Sensor.java)
