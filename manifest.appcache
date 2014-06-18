@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1403051724257
+# Revision 1403051886029
 
 CACHE:
 best_practices/README.html
@@ -14,6 +14,7 @@ coordinate_system/README.html
 examples/diceshaker/README.html
 examples/sensorlist/README.html
 gravity_and_linear_acceleration/README.html
+raw_and_composite/README.html
 references/README.html
 sensor_rates/README.html
 types_of_sensors/README.html

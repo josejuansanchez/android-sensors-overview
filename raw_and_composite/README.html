@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Sensor Coordinate System | Android Sensors Overview</title>
+        <title>Raw Sensors and Composite Sensors | Android Sensors Overview</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.2">
@@ -19,10 +19,10 @@
     <meta name="author" content="josejuansanchez">
     
     
-    <link rel="next" href="../accelerometer/README.html" />
+    <link rel="next" href="../coordinate_system/README.html" />
     
     
-    <link rel="prev" href="../raw_and_composite/README.html" />
+    <link rel="prev" href="../sensor_rates/README.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="6" data-basepath=".." data-revision="1403051886028">
+    <div class="book" data-github="josejuansanchez/android-sensors-overview" data-level="5" data-basepath=".." data-revision="1403051886028">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -118,7 +118,7 @@
         
         
         <li>
-            <a href="https://github.com/josejuansanchez/android-sensors-overview/edit/master/coordinate_system/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/josejuansanchez/android-sensors-overview/edit/master/raw_and_composite/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -310,7 +310,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 62.5%;min-width: 56.25%;"></div>
+        <div class="inner" style="width: 56.25%;min-width: 50%;"></div>
     </div>
     <div class="chapters">
     
@@ -334,7 +334,7 @@
     
         <a href="../raw_and_composite/README.html" title="Raw Sensors and Composite Sensors" class="chapter done new-chapter" data-progress="5" style="left: 56.25%;"></a>
     
-        <a href="../coordinate_system/README.html" title="Sensor Coordinate System" class="chapter done new-chapter" data-progress="6" style="left: 62.5%;"></a>
+        <a href="../coordinate_system/README.html" title="Sensor Coordinate System" class="chapter  new-chapter" data-progress="6" style="left: 62.5%;"></a>
     
         <a href="../accelerometer/README.html" title="Accelerometer" class="chapter  new-chapter" data-progress="7" style="left: 68.75%;"></a>
     
@@ -353,19 +353,33 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_9">
+                    <section class="normal" id="section-gitbook_13">
                     
-                        <h1 id="sensor-coordinate-system">Sensor Coordinate System</h1>
-<p>In general, the sensor framework uses a standard 3-axis coordinate system to express data values. </p>
-<p><p align="center">
-  <img src="http://developer.android.com/images/axis_device.png" alt="Coordinate system used by the SensorEvent API" />
-</p>
-<em>Image 1: <a href="http://developer.android.com/reference/android/hardware/SensorEvent.html" target="_blank">Android Developers</a></em></p>
-<p>The coordinate-system is defined relative to the screen of the phone in its default orientation. <strong>The axes are not swapped when the device&#39;s screen orientation changes</strong>.</p>
-<p>The X axis is horizontal and points to the right, the Y axis is vertical and points up and the Z axis points towards the outside of the front face of the screen. In this system, coordinates behind the screen have negative Z values.</p>
-<blockquote>
-<p><strong>Note</strong>: This coordinate system is different from the one used in the Android 2D APIs where the origin is in the top-left corner.</p>
-</blockquote>
+                        <h1 id="raw-sensors-and-composite-sensors">Raw Sensors and Composite Sensors</h1>
+<p>The sensors referenced through the <a href="http://developer.android.com/reference/android/hardware/Sensor.html" target="_blank">Sensor</a> class may be of two types: </p>
+<ul>
+<li><strong>Raw sensors</strong> (hardware-based) give raw data from a sensor, and one raw sensor corresponds to one actual physical component inside the Android device. <ul>
+<li><code>Sensor.TYPE_LIGHT</code></li>
+<li><code>Sensor.TYPE_PROXIMITY</code></li>
+<li><code>Sensor.TYPE_PRESSURE</code></li>
+<li><code>Sensor.TYPE_TEMPERATURE</code> (deprecated) </li>
+<li><code>Sensor.TYPE_ACCELEROMETER</code></li>
+<li><code>Sensor.TYPE_GYROSCOPE</code></li>
+<li><code>Sensor.TYPE_MAGNETIC_FIELD</code></li>
+<li><code>Sensor.TYPE_RELATIVE_HUMIDITY</code></li>
+<li><code>Sensor.TYPE_AMBIENT_TEMPERATURE</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Composite sensors</strong> (software-based) provide an abstraction layer between application code and low-level device components by either combining the raw data of multiple raw sensors, or by modifying the raw sensor data to make it easier to consume.<ul>
+<li><code>Sensor.TYPE_ROTATION_VECTOR</code></li>
+<li><code>Sensor.TYPE_LINEAR_ACCELERATION</code></li>
+<li><code>Sensor.TYPE_GRAVITY</code></li>
+<li><code>Sensor.TYPE_ORIENTATION</code> (deprecated)</li>
+</ul>
+</li>
+</ul>
 
                     
                     </section>
@@ -375,10 +389,10 @@
         </div>
 
         
-        <a href="../raw_and_composite/README.html" class="navigation navigation-prev " aria-label="Previous page: Raw Sensors and Composite Sensors"><i class="fa fa-angle-left"></i></a>
+        <a href="../sensor_rates/README.html" class="navigation navigation-prev " aria-label="Previous page: Sensor Rates"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../accelerometer/README.html" class="navigation navigation-next " aria-label="Next page: Accelerometer"><i class="fa fa-angle-right"></i></a>
+        <a href="../coordinate_system/README.html" class="navigation navigation-next " aria-label="Next page: Sensor Coordinate System"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
