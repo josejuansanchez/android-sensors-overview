@@ -16,10 +16,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
-
 	private SensorManager mSensorManager;
 	private List<Sensor> mSensors;
-	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,39 +25,36 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
-        mSensors = mSensorManager.getSensorList(Sensor.TYPE_ALL);	
+		mSensors = mSensorManager.getSensorList(Sensor.TYPE_ALL);	
         
-        ListView listview = (ListView) findViewById(R.id.listview);
-        listview.setAdapter(new SensorListAdapter(this, android.R.layout.simple_list_item_1, mSensors));
-		
+		ListView listview = (ListView) findViewById(R.id.listview);
+		listview.setAdapter(new SensorListAdapter(this, android.R.layout.simple_list_item_1, mSensors));		
 	}
 	
-    private class SensorListAdapter extends ArrayAdapter<Sensor> {
-        public SensorListAdapter(Context context, int textViewResourceId, List<Sensor> sensors) {
-            super(context, textViewResourceId, sensors);
-        }
+	private class SensorListAdapter extends ArrayAdapter<Sensor> {
+		public SensorListAdapter(Context context, int textViewResourceId, List<Sensor> sensors) {
+			super(context, textViewResourceId, sensors);
+		}
 
-        @Override
-        public View getView(final int position, View convertView, ViewGroup parent) {
-            final Sensor selectedSensor = getItem(position);
-            if (convertView == null) {
-                convertView = LayoutInflater.from(getContext()).inflate(android.R.layout.simple_list_item_1, null);
-            }
+		@Override
+		public View getView(final int position, View convertView, ViewGroup parent) {
+			final Sensor selectedSensor = getItem(position);
+			if (convertView == null) {
+				convertView = LayoutInflater.from(getContext()).inflate(android.R.layout.simple_list_item_1, null);
+			}
 
-            ((TextView) convertView).setText(selectedSensor.getName());
+			((TextView) convertView).setText(selectedSensor.getName());
 
-            convertView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v)
-                {
-                	Intent intent = new Intent(MainActivity.this, SensorInfoActivity.class);
-                	intent.putExtra("SENSOR_TYPE", mSensors.get(position).getType());
-                	startActivity(intent);
-                }
-            });
-            return convertView;
-        }
-    }	
-		
+			convertView.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v)
+				{
+					Intent intent = new Intent(MainActivity.this, SensorInfoActivity.class);
+					intent.putExtra("SENSOR_TYPE", selectedSensor.getType());
+					startActivity(intent);
+				}
+			});
+			return convertView;
+		}
+	}		
 }
-
