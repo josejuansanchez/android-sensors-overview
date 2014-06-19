@@ -20,3 +20,4 @@
   * [A runnable form of the code can also be downloaded from Google Play](https://play.google.com/store/apps/details?id=root.gast.playground)
 * Tutorial: [Android Sensor](http://www.vogella.com/tutorials/AndroidSensor/article.html). Lars Vogel.
 * Video: [Sensor Fusion on Android Devices: A Revolution in Motion Processing](https://www.youtube.com/watch?v=C7JQ7Rpwn2k). Google Tech Talk 2010.
+* Video: [The Sensitive Side of Android](https://developers.google.com/events/io/2012/sessions/gooio2012/108/). Google Tech Talk 2012.
